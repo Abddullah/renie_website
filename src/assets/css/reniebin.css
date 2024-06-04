@@ -1,0 +1,627 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* overflow-y: scroll; */
+}
+.gradient-text {
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 50%, #e31662 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bg-shaded {
+  background: linear-gradient(
+    90deg,
+    #4765e6 33.33%,
+    #5c4099 66.66%,
+    #e31662 100%
+  );
+}
+/* Hero section Start */
+.binHeroSection {
+  width: 100%;
+  height: auto;
+  background: url("../images/reniebinHero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  /* border: 1px solid black; */
+}
+.heroImg {
+  height: 588px;
+  width: 672px;
+}
+.transform {
+  font-weight: 600;
+  font-size: 61.13px;
+  line-height: 61.13px;
+  color: #e31662;
+}
+.yourwaste {
+  font-weight: 900;
+  font-size: 85.58px;
+  line-height: 85.58px;
+  color: purple;
+}
+.into {
+  font-weight: 700;
+  font-size: 61.13px;
+  line-height: 61.13px;
+  color: #4765e6;
+}
+.income {
+  font-weight: 900;
+  font-size: 92.17px;
+  line-height: 64.81px;
+}
+.arrowImg {
+  width: 41.19px;
+  height: 131.79px;
+}
+.heroButton {
+  background: linear-gradient(
+    90deg,
+    #4765e6 33.33%,
+    #5c4099 66.66%,
+    #e31662 100%
+  );
+  padding: 10px 20px !important;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* Hero section End */
+
+/* About sectoin start */
+.aboutSection {
+  height: 448.5px;
+  /* border: 1px solid black; */
+}
+.imageSection {
+  width: 448.5px;
+  height: 448.5px;
+}
+.aboutTitleTop {
+  font-size: 35px;
+  line-height: 35px;
+  color: #ff0e64;
+}
+.aboutTitleMain {
+  font-size: 35px;
+  line-height: 52px;
+}
+.aboutPeragraph {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* End */
+
+/* ServiceCards Start */
+
+.serviceCardsSection {
+  position: relative;
+  height: 858px;
+  /* border: 1px solid black; */
+  overflow: hidden; /* Ensures that the pseudo-element is contained within the section */
+}
+
+.serviceCardsSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/serviceBg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Set the desired opacity here */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+.reniebin-demo {
+  background-image: url("../images/top-left-gred.png");
+  background-size: cover;
+}
+.serviceTitleText {
+  font-size: 35px;
+  line-height: 45px;
+}
+/* old */
+/* .cardItem {
+  position: relative;
+  height: 578px;
+  width: 390px;
+  background-image: url('../images/card-bg.png');
+  border-radius: 20px;
+  padding: 10px; 
+  background-clip: padding-box;
+} */
+.cardItem {
+  position: relative;
+  height: 578px;
+  width: 390px;
+  background-image: url("../images/card-bg.png");
+  background-size: contain;
+  background-repeat: round;
+  border-radius: 20px; /* Adjust as needed */
+  overflow: hidden;
+  padding: 10px; /* Adjust as needed */
+  background-clip: padding-box; /* This ensures the padding is within the rounded border */
+}
+.cardItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px; /* Same as .cardItem */
+  padding: 10px; /* Adjust as needed */
+  background: linear-gradient(90deg, #4765e6, #5c4099, #e31662);
+  z-index: -1;
+}
+.cardTitle {
+  font-size: 25px;
+  line-height: 42px;
+}
+.extractionCardImg {
+  width: 213.13px;
+  height: 306.95px;
+}
+.cardPeragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.iconImg {
+  height: 318px;
+  /* width: 70%; */
+}
+.incomeCardImg {
+  width: 180px;
+  height: 180px;
+}
+.cardIconImg {
+  height: 318px;
+  width: 100%;
+}
+/* End */
+
+/* RenieBin Section Start */
+.renieBinSection {
+  height: 899px;
+  /* border: 1px solid black; */
+}
+.renieTitleText {
+  font-size: 45px;
+  line-height: 45px;
+}
+.renieSubTitle {
+  font-size: 35px;
+  line-height: 35px;
+  color: #ff0e64;
+}
+.dataSection {
+  background-image: url("../images/renie-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconImg {
+  width: 64px;
+  height: 64px;
+}
+.iconText {
+  font-size: 22px;
+  line-height: 35px;
+  color: #ff0e64;
+}
+.iconTitle {
+  font-size: 22px;
+  line-height: 35px;
+}
+.iconItem {
+  height: auto;
+}
+/* .renieCenter {
+ 
+} */
+.renieCenteredImg {
+  width: 486.87px;
+  height: 703.68px;
+}
+.reniebigImgText {
+  font-size: 15px;
+  line-height: 15px;
+  color: #ff0e64;
+}
+
+/* End */
+/* RenieRewards Section */
+.renieRewardSection {
+  height: 487px;
+  background-image: url("../images/reward-bg.png");
+  /* border: 1px solid black; */
+}
+.rewardImg {
+  width: 486.15px;
+  height: 369px;
+}
+.rewardTitleMain {
+  font-size: 35px;
+  line-height: 35px;
+}
+/* End */
+/* RenieHub Start */
+.renieHubSection {
+  height: 750px;
+  /* background-image: url('../images/reward-bg.png'); */
+  /* border: 1px solid black; */
+}
+/* end */
+
+/* adsMatterSection */
+.adsMatterSection {
+  height: 656px;
+  background-image: url("../images/reward-bg.png");
+}
+.adsTitleText {
+  font-size: 45px;
+  line-height: 45px;
+}
+.adsImg {
+  height: 627.71px;
+  width: 304px;
+}
+/* end */
+/* TellStory Section */
+.tellStorySection {
+  height: 750px;
+  /* border: 1px solid black; */
+}
+.tellStoryTitle {
+  font-size: 35px;
+  line-height: 45px;
+  color: #ff0e64;
+}
+.tellStorySubTitle {
+  font-size: 35px;
+  line-height: 35px;
+}
+.blackBottle {
+  width: 284px;
+  height: 409px;
+}
+.pinkBottle {
+  width: 292px;
+  height: 422px;
+}
+.horizentalArrow {
+  width: 418.82px;
+  height: 159.48px;
+}
+.redLink {
+  font-size: 15px;
+  line-height: 15px;
+  color: #ff0e64;
+}
+.blueLink {
+  font-size: 15px;
+  line-height: 15px;
+  color: #4765e6;
+}
+/* End */
+/* subscribtoinSection */
+.subscribtoinSection {
+  height: 600px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.subscribImg {
+  width: 292.54px;
+  height: 421.79px;
+}
+/* .standardCard {
+  width: 300px;
+  height: 480px;
+  border-radius: 20px;
+  background-image: url('../images/standard-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.standardCard:hover {
+  width: 400px;
+  height: 582px;
+  background-image: url('../images/card-bg.png');
+  background-repeat: round;
+  background-size: cover;
+} */
+/* .customCard {
+  width: 300px;
+  height: 480px;
+  background-image: url('../images/custom-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customCard:hover {
+  width: 400px;
+  height: 582px;
+  background-image: url('../images/customHover-bg.png');
+  background-repeat: round;
+  background-size: cover;
+} */
+.cardTitle {
+  font-size: 22px;
+  line-height: 27px;
+}
+.cardPrice {
+  font-size: 20px;
+  line-height: 27px;
+  color: #4765e6;
+}
+.price {
+  font-size: 27px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.cardTime {
+  font-size: 20px;
+  line-height: 27px;
+  color: black;
+}
+.imageTitleText {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 900;
+}
+.imageTitleTime {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 900;
+  color: #e31662;
+}
+
+.top-gradient {
+  background-image: url("../images/topGradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.data-monetization-main {
+  background-image: url("../images/digital-bg.webp");
+}
+/* End */
+
+/* Medai Queries for responsive design */
+@media screen and (max-width: 768px) {
+  .heroSection {
+    width: 100%;
+    height: 579px;
+    background: url("../images/home-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover !important;
+  }
+  .transform {
+    font-weight: 600;
+    font-size: 37.43px;
+    line-height: 37.43px;
+    color: #e31662;
+  }
+  .yourwaste {
+    font-weight: 700;
+    font-size: 52.4px;
+    line-height: 52.4px;
+    color: purple;
+  }
+  .into {
+    font-weight: 700;
+    font-size: 37.43px;
+    line-height: 37.43px;
+    color: #4765e6;
+  }
+  .income {
+    font-weight: 900;
+    font-size: 56.44px;
+    line-height: 39.68px;
+  }
+  .heroButton {
+    /* padding: 10px 15px !important; */
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .bigCircle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .roundedIcon {
+    width: 90px;
+    height: 89.06px;
+  }
+  .arrowImg {
+    width: 29.6px;
+    height: 84px;
+  }
+  /* About Section mobile */
+  .aboutSection {
+    height: 689px;
+    /* border: 1px solid black; */
+  }
+  .imageSection {
+    width: 296px;
+    height: 296px;
+  }
+  .aboutTitleTop {
+    font-size: 25px;
+    line-height: 35px;
+    color: #ff0e64;
+  }
+  .aboutTitleMain {
+    font-size: 25px;
+    line-height: 52px;
+  }
+  .aboutPeragraph {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  /* end */
+  /* serviceCard  */
+  .cardItem {
+    display: flex !important;
+    margin: 10px auto;
+    position: relative;
+    height: 578px !important;
+    width: 85vw !important;
+    background-image: url("../images/card-bg.png");
+    background-repeat: round !important;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px !important;
+    background-clip: padding-box;
+  }
+  .cardIconsSection {
+    height: 308px;
+    width: 80%;
+  }
+  .cardIconImg {
+    height: 100%;
+    width: 239px;
+    /* width: 100%; */
+  }
+  /* end */
+  /* RenieBin */
+  .dataSection {
+    background: none;
+  }
+  /* .renieCenter {
+    background-image: url("../images/renie-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } */
+  .renieCenteredImg {
+    width: 242.49px;
+    height: 350.75px;
+  }
+  .iconItem {
+    display: flex !important;
+  }
+  /* End */
+  /* RenieReward */
+  .renieRewardSection {
+    height: 664px;
+  }
+  .rewardImg {
+    width: 330.42px;
+    height: 251px;
+  }
+  .rewardTitleMain {
+    font-size: 45px;
+    line-height: 35px;
+  }
+  /* end */
+  /* adsMatterSection */
+  .adsMatterSection {
+    height: 1054px;
+    /* background-image: url('../images/reward-bg.png'); */
+  }
+  .adsTitleText {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .adsImg {
+    height: 450px;
+    width: 240px;
+  }
+  /* End */
+  /* tellStorySection */
+  .tellStorySection {
+    height: 985px;
+  }
+  .tellStoryTitle {
+    font-size: 25px;
+  }
+  .tellStorySubTitle {
+    font-size: 25px;
+  }
+  .blackImage {
+    display: flex;
+    justify-content: start;
+  }
+  .pinkImage {
+    display: flex;
+    justify-content: end;
+  }
+  .arrowImage {
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    /* transform: translate(-32%, -60%); */
+  }
+  .blackBottle {
+    width: 179px;
+    height: 257px;
+  }
+  .pinkBottle {
+    margin-top: 2rem;
+    height: 334.09px;
+    width: 230.9px;
+  }
+  .horizentalArrow {
+    width: 123.5px;
+    height: 51.48px;
+    transform: rotate(75deg);
+  }
+  /* End */
+  /* SubscribCard Start */
+  .subcribCardsSection {
+    height: 1860px;
+  }
+  /* .standardCard {
+    width: 300px !important;
+    height: 570px;
+    border-radius: 20px;
+    background-image: url('../images/standard-bg.png');
+    background-repeat: round;
+    background-size: cover;
+  }
+  .standardCard:hover {
+    width: 300px !important;
+    height: 570px;
+    background-image: url('../images/standard-bg.png');
+    background-size: cover;
+  } */
+  /* .customCard {
+    width: 300px !important;
+    height: 570px;
+    background-image: url('../images/customMobile-bg.png');
+    background-repeat: round;
+    background-size: cover;
+  }
+  .customCard:hover {
+    background-image: url('../images/customMobile-bg.png');
+    background-repeat: round;
+    background-size: cover;
+    width: 300px !important;
+    height: 570px;
+  } */
+  .imageTitle {
+    width: auto !important;
+  }
+  .imageTitleText {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 900;
+  }
+  .imageTitleTime {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 900;
+    color: #e31662;
+  }
+  /* End */
+}

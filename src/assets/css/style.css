@@ -1,0 +1,302 @@
+/* style.css */
+
+/* the above code for pagination */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box !important;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #4765e6 0%, #5c4099 50%, #e31662 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradientButton {
+  background: linear-gradient(
+    90deg,
+    #4765e6 33.33%,
+    #5c4099 66.66%,
+    #e31662 100%
+  );
+}
+/* Header Component */
+.headerMain {
+  height: 97px;
+}
+.headerLogo {
+  width: 137px;
+  height: 45.79px;
+}
+.headerButton {
+  background: linear-gradient(
+    90deg,
+    #4765e6 33.33%,
+    #5c4099 66.66%,
+    #e31662 100%
+  );
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-weight: 400 !important;
+}
+.menuIcon {
+  color: #e31662;
+}
+.linkItem {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+}
+/* Footer Component */
+.footer {
+  background: #edf0fc;
+  /* height: 382px; */
+  border-top: 10px solid; /* Set the border width */
+  border-image: linear-gradient(90deg, #4765e6, #5c4099, #e31662) 1;
+}
+.footerLogo {
+  width: 200.47px;
+  height: 67px;
+}
+.footerText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+}
+.socialTitle {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  /* color: linear-gradient(90deg, #4765e6 33.33%, #5c4099 66.66%, #e31662 100%); */
+}
+.iconItem {
+  width: 71px;
+  height: 71px;
+  cursor: pointer;
+}
+.footerLink {
+  font-size: 18px;
+  font-weight: 400 !important;
+  line-height: 27px;
+}
+.rightRreservedText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* TrustedBy Component */
+.trustedBySection {
+  position: relative;
+}
+.trustMain {
+  /* height: 184px; */
+}
+.trustTitleText {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+}
+/* .trustItem1 {
+  width: 251px;
+  height: 72px;
+}
+.trustItem2 {
+  width: 294px;
+  height: 79px;
+}
+.trustItem3 {
+  width: 253px;
+  height: 48px;
+}
+.trustItem4 {
+  width: 237px;
+  height: 135px;
+}
+.trustItem5 {
+  width: 235px;
+  height: 57px;
+} */
+
+/* .trustItem {
+  max-width: 100%;
+  max-height: 100%;
+} */
+.item {
+  width: 200px !important;
+  height: 135px;
+  /* border: 1px solid black; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.trustItem {
+  width: 100%; /* Set the width of each trustItem */
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+}
+
+.trustItem img {
+  max-width: 100%; /* Ensure the images don't exceed the container width */
+  max-height: 100%; /* Ensure the images don't exceed the container height */
+}
+.slick-track {
+  display: flex;
+  align-items: center !important;
+}
+.renie-hub-main {
+  background: linear-gradient(
+    224.26deg,
+    #ffffff 72.5%,
+    rgba(71, 101, 230, 0.1) 247.12%
+  );
+}
+
+.binhub-hero-bg {
+  background: url("../images/renie-hub-hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-y: center; */
+  /* border: 1px solid black; */
+}
+
+.reniehub-track-earning {
+  background-image: url("../images/topGradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.follow-impact {
+  background-image: url("../images/followimpact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reniehub-trustedby-main {
+  background-image: url("../images/topGradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bin-ads-bg {
+  background-image: url("../images/renie-hub-hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.renie-hub-track-main {
+  background-color: #edf0fd;
+}
+.renie-hub-transparency {
+  background-image: url("../images/buttomGradient-bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.renie-app-transparency {
+  background-image: url("../images/buttomGradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-dots li button::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 1;
+  color: transparent;
+  line-height: 7px !important;
+  background-color: transparent;
+}
+
+.slick-dots li.slick-active button::before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 7px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(
+    90deg,
+    #4765e6 33.33%,
+    #5c4099 66.66%,
+    #e31662 100%
+  );
+  color: transparent !important;
+}
+
+@media screen and (max-width: 920px) {
+  .renie-hub-transparency {
+    background-image: url("../images/buttomGradient-bg.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slick-dots {
+    bottom: -45px !important;
+  }
+  /* Header */
+  .headerMain {
+    height: 54px;
+  }
+  .headerLogo {
+    width: 95px;
+    height: 31px;
+  }
+  /* Footer */
+  .footer {
+    background: #edf0fc;
+    height: 617px;
+  }
+  .iconItem {
+    width: 55.48px;
+    height: 55.48px;
+    cursor: pointer;
+  }
+  .socialTitle {
+    font-size: 25px;
+  }
+  .footerLink {
+    font-size: 14px;
+  }
+  .footerText {
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .rightRreservedText {
+    font-size: 14px;
+  }
+  .item {
+    width: 150px !important;
+    height: 51px !important;
+    /* border: 1px solid black; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ads-mob {
+    width: 90%;
+    transform: translateY(-2rem) !important;
+  }
+  .renie-hub-mbl-circle {
+    top: -90% !important;
+    right: -10px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .renie-hub-mbl-circle {
+    top: -70% !important;
+    right: -10px !important;
+  }
+}
