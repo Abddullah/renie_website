@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoSVG from "../assets/images/logoSVG.svg";
 import linkedinIcon from "../assets/images/linkedin.png";
 import tiktokIcon from "../assets/images/tiktok.png";
-import twiterIcon from "../assets/images/linkedin.png";
+import twiterIcon from "../assets/images/twitter.png";
 import youtubeIcon from "../assets/images/youtube.png";
 import instagramIcon from "../assets/images/instagram.png";
 
@@ -38,13 +38,13 @@ function Footer() {
             >
               <img src={instagramIcon} alt="Instagram" className="iconItem" />
             </Link>
-            <Link
+            {/* <Link
               to="http://twitter.com/yourtwitterhandle"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={twiterIcon} alt="Twitter" className="iconItem" />
-            </Link>
+            </Link> */}
             <Link
               to="http://youtube.com/@wearerenie"
               target="_blank"
