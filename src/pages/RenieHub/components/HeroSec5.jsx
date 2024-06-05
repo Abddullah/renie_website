@@ -1,23 +1,24 @@
 import React from "react";
 import trackEarn from "../../../assets/images/track-earning.webp";
 import binleafImg from "../../../assets/images/bg-leaf.webp";
+import Connect from "../../../components/Connect";
 const HeroSec5 = () => {
   return (
-    <div className="flex justify-center reniehub-track-earning relative z-[-1]">
+    <div className="flex justify-center reniehub-track-earning relative">
       <img
-        className="cmd:hidden absolute w-[350px] right-[-1.5rem] z-[-1] top-[-75px]"
+        className="cmd:hidden absolute w-[350px] right-[-1.5rem]  top-[-75px]"
         src={binleafImg}
         alt="trackEarnhub"
       />
       <img
-        className="hidden cmd:block absolute w-[350px] right-2 z-[-1]  top-[-75px]"
+        className="hidden cmd:block absolute w-[300px] right-2   top-[-12px]"
         src={binleafImg}
         alt="trackEarnhub"
       />
       <div className="max-w-[1440px] flex flex-col justify-center items-center px-5 sm:px-6 lg:px-8 py-[120px] gap-[80px]">
         <div className="flex flex-col cmd:flex-row justify-center  items-center gap-8 w-full ">
           <div className="w-full flex justify-center  cmd:w-[50%]">
-            <img className="" src={trackEarn} alt="trackEarnhub" />
+            <img className="relative" src={trackEarn} alt="trackEarnhub" />
           </div>
 
           <div className="w-full cmd:w-[50%]">
@@ -29,9 +30,12 @@ const HeroSec5 = () => {
               has reached the recycling point and our technology has completed
               the monetization process, the sum becomes available for payout.
             </p>
-            <button className="heroButton text-[#fff] hidden cmd:block">
+            {/* <button className="heroButton text-[#fff] hidden cmd:block">
               Connect with an expert
-            </button>
+            </button> */}
+            <div className="hidden cmd:block">
+              <Connect />
+            </div>
           </div>
         </div>
 
@@ -47,9 +51,10 @@ const HeroSec5 = () => {
               mission and joined us. With you onboard we are sure that the
               future of plastic is digital.
             </p>
-            <button className="heroButton text-[#fff] ">
+            {/* <button className="heroButton text-[#fff] ">
               Connect with an expert
-            </button>
+            </button> */}
+            <Connect />
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ const StepBin = () => {
                 bins to any smartphone without the need to download any
                 application
               </p>
-              <Link to="/renieapp">
+              <Link to="/products/renie-app">
                 <span className=" font-semibold leading-[15px] text-[#E31662] text-[15px] block cmd:inline text-center">
                   Learn more &gt;
                 </span>

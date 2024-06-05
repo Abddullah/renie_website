@@ -7,7 +7,7 @@ const HeroAds5 = () => {
   return (
     <div>
       <div
-        className=" flex justify-around items-center py-[40px] relative z-[-1]"
+        className=" flex justify-around items-center py-[40px] relative "
         style={{
           background:
             "linear-gradient(90deg, #4765e6 0%, #5c4099 50%, #e31662 100%)",
@@ -34,7 +34,7 @@ const HeroAds5 = () => {
 
           <div className="flex gap-2 w-[80vw] cmd:w-[48%]">
             <div className=" text-white">
-              <h2 className="text-[35px] cmd:text-[45px] leading-[45px] font-[900] mb-4 text-center cmd:text-left">
+              <h2 className="text-[35px] cmd:text-[45px] relative z-[1] leading-[45px] font-[900] mb-4 text-center cmd:text-left">
                 Your ad is the first impression
               </h2>
               <span className="text-[18px] leading-[27px] font-[300] block text-center cmd:text-left">

@@ -16,8 +16,9 @@ import { useEffect } from "react";
 
 function Reniebin() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+    document.title = "Renie Bin";
+  }, []);
   return (
     <div className="mt-2.5">
       <div className="binHeroSection flex">

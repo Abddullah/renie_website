@@ -3,10 +3,11 @@ import AdMap from "../../../assets/images/ad-map.webp";
 import Round1 from "../../../assets/images/round-1.png";
 import bgLeaf from "../../../assets/images/dark-leaf.svg";
 import recycle from "../../../assets/images/recycle.webp";
+import Connect from "../../../components/Connect";
 
 const HeroApp1 = () => {
   return (
-    <div className="binHeroSection z-[-1] relative">
+    <div className="binHeroSection relative">
       <div className=" max-w-[1440px] cmd:w-10/12 px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row justify-center items-center mx-auto pt-[60px] pb-5">
         <div className="w-full md:w-[50%] md:mx-auto px-8 mx-auto my-4 cmd:translate-x-[6rem] cmd:translate-y-[-7.5rem]">
           <p className="text-[17px] md:text-[21.39px] leading-[25.09px] md:leading-[32.09px] font-[600] md:font-[900]">
@@ -24,9 +25,9 @@ const HeroApp1 = () => {
             Rewards?
           </h2>
           <div className="flex flex-col items-center cmd:block">
-            <button className="heroButton !text-[20px] text-[#fff] px-[15px] py-[10px] mt-5 ">
-              Go to the Renie app
-            </button>
+            <div className=" mt-5 ">
+              <Connect text="Go to the Renie app" />
+            </div>
             <p className="text-[14px] leading-[27px] font-[400]">
               No download needed
             </p>
@@ -51,9 +52,9 @@ const HeroApp1 = () => {
               alt="AdMap"
             />
             <div className="flex flex-col md:flex-row">
-              <img className="" src={AdMap} alt="AdMap" />
+              <img className="relative z-[1]" src={AdMap} alt="AdMap" />
               <img
-                className=" hidden md:block absolute top-[-30px] right-[-20px] z-[-1]"
+                className=" hidden md:block absolute top-[-30px] right-[-20px] "
                 src={bgLeaf}
                 alt="AdMap"
               />

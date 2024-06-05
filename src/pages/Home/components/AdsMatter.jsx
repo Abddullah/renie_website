@@ -33,8 +33,8 @@ function AdsMatter() {
             ads reach the right people, at the right time, in the right place.
           </p>
         </div>
-        <Link to="/renieads">
-          <span className="reniebigImgText font-semibold text-center md:text-left">
+        <Link className="text-center md:text-left" to="/services/ads">
+          <span className="reniebigImgText font-semibold ">
             Learn more {">"}{" "}
           </span>
         </Link>

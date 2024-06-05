@@ -15,8 +15,9 @@ import Hub from "../../components/Hub";
 
 function Home() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+    document.title = "Renie: Transform your waste into income ";
+  }, []);
   const serviceCardRef = useRef(null);
 
   const scrollToServiceCard = () => {

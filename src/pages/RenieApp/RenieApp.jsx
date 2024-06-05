@@ -9,8 +9,9 @@ import TrustedBy from "../../components/TrustedBy";
 import Hub from "../../components/Hub";
 const RenieApp = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+    document.title = "Renie App";
+  }, []);
   return (
     <div className="overflow-hidden">
       <HeroApp1 />

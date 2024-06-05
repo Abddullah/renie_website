@@ -1,7 +1,10 @@
 import React from "react";
 import mediaIhero from "../../../assets/images/mediaImg.svg";
+import trash from "../../../assets/images/trash.svg";
+import tdra from "../../../assets/images/tdra.svg";
+import gcce from "../../../assets/images/gcce.svg";
 
-const HeroMdMain = ({ isOpen }) => {
+const HeroMdMain = ({ isOpen, index }) => {
   return (
     <>
       {" "}
@@ -11,7 +14,17 @@ const HeroMdMain = ({ isOpen }) => {
             <din className="mx-auto md:flex flex-col">
               <div className="md:flex">
                 <div className="w-full">
-                  <img className="w-full" src={mediaIhero} alt="mian media" />
+                  <img
+                    className="w-full"
+                    src={
+                      [0, 5].includes(index)
+                        ? tdra
+                        : [1, 3].includes(index)
+                        ? gcce
+                        : trash
+                    }
+                    alt="mian media"
+                  />
                 </div>
               </div>
             </din>

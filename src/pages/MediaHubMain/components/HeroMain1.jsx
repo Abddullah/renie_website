@@ -3,7 +3,7 @@ import trash from "../../../assets/images/trash.svg";
 import tdra from "../../../assets/images/tdra.svg";
 import gcce from "../../../assets/images/gcce.svg";
 
-const HeroMain1 = ({ isOpen, handleClick }) => {
+const HeroMain1 = ({ isOpen, handleClick, getIndex }) => {
   const cards = [
     {
       id: 1,
@@ -45,14 +45,15 @@ const HeroMain1 = ({ isOpen, handleClick }) => {
     {
       id: 6,
       imag: tdra,
-      btnText: "MEDIAs",
+      btnText: "MEDIAS",
       mainText: "Renie obtains TDRA certification!",
       date: "20-May-2024",
     },
   ];
 
-  const handleState = () => {
+  const handleState = (i) => {
     handleClick(!isOpen);
+    getIndex(i);
   };
 
   return (
@@ -63,9 +64,9 @@ const HeroMain1 = ({ isOpen, handleClick }) => {
         </span>
         <div className="cmd:flex flex-wrap">
           {cards &&
-            cards.map((items) => (
+            cards.map((items, i) => (
               <div
-                onClick={handleState}
+                onClick={() => handleState(i)}
                 className="w-[98%] h-[450px] rounded-[10px] shadow-md md:w-[31.333%] flex flex-col justify-between cursor-pointer mx-auto my-4 py-4 p-2"
               >
                 <header className="w-[99%] h-[280px]  overflow-hidden rounded-md ">

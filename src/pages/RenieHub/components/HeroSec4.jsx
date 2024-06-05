@@ -1,9 +1,10 @@
 import React from "react";
 import trackImapact from "../../../assets/images/track-impact.webp";
+import Connect from "../../../components/Connect";
 
 const HeroSec4 = () => {
   return (
-    <div className="renie-hub-track-main flex justify-center relative z-[-1]">
+    <div className="renie-hub-track-main flex justify-center relative ">
       <div className="max-w-[1440px] cmd:h-[650px] px-5 sm:px-6 lg:px-8 flex flex-col-reverse cmd:flex-row justify-center items-center gap-14 cmd:gap-0 py-14">
         <div className="w-full cmd:w-[50%]">
           <h2 className="text-[35px] cmd:text-[45px] leading-[35px] font-[900] gradient-text text-center cmd:text-left">
@@ -15,9 +16,10 @@ const HeroSec4 = () => {
             can also generate tailored ESG reports about your created impact.
           </p>
           <div className=" justify-center hidden cmd:flex cmd:justify-start">
-            <button className="heroButton text-[#fff]">
+            {/* <button className="heroButton text-[#fff]">
               Connect with an expert
-            </button>
+            </button> */}
+            <Connect />
           </div>
         </div>
         <div className="w-full cmd:w-[50%] flex justify-center">

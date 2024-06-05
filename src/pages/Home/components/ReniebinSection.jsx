@@ -11,6 +11,7 @@ import binleafImg from "../../../assets/images/bg-leaf.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 function ReniebinSection() {
   const settings = {
@@ -30,7 +31,7 @@ function ReniebinSection() {
 
   return (
     <>
-      <div className="renieBinSection h-full cmd:py-[100px] z-[-1] relative">
+      <div className="renieBinSection h-full cmd:py-[100px] relative">
         <div className="renieMain contentSection h-full  cmd:w-10/12  mx-auto">
           <div className="renieTitleSection mb-5 text-center ">
             <span className="renieTitleText font-bold gradient-text text-[35px] cmd:text-[45px]">
@@ -52,33 +53,40 @@ function ReniebinSection() {
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg2} alt="icon2" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Gives consumer</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  rewards
                 </span>
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg3} alt="icon3" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Tracks</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  deposited waste
                 </span>
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg4} alt="icon4" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Automatically segregates</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  waste
                 </span>
               </div>
             </div>
             <div className="renieCenter flex flex-col items-center gap-5 mt-5 relative">
-              <span className="reniebigImgText font-semibold">
-                Learn more {">"}{" "}
-              </span>
-              <img className="renieCenteredImg" src={binBigImg} alt="bin" />
+              <Link to="/products/renie-bins">
+                <span className="reniebigImgText font-semibold">
+                  Learn more {">"}{" "}
+                </span>
+              </Link>
+
               <img
-                className="absolute md:hidden w-[85%] top-[-5%] z-[-1]"
+                className="renieCenteredImg relative z-[1]"
+                src={binBigImg}
+                alt="bin"
+              />
+              <img
+                className="absolute md:hidden w-[85%] top-[-5%] "
                 src={binleafImg}
                 alt="bin"
               />
@@ -86,30 +94,30 @@ function ReniebinSection() {
             <div className="binIcons hidden md:flex flex-col justify-start gap-10 h-full mt-5">
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg5} alt="icon5" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Uses decentraized</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  blockchain
                 </span>
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg6} alt="icon6" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Monetises</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  data
                 </span>
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg7} alt="icon7" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Extracts</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  value data
                 </span>
               </div>
               <div className="iconItem flex flex-col items-center w-full">
                 <img className="iconImg" src={binImg8} alt="icon8" />
-                <span className="iconText">only accepts</span>
+                <span className="iconText">Embedded cellular</span>
                 <span className="iconTitle font-semibold gradient-text">
-                  recyclable waste
+                  network
                 </span>
               </div>
             </div>
@@ -121,59 +129,58 @@ function ReniebinSection() {
         <Slider {...settings}>
           <div className="iconItem flex flex-col items-center justify-center w-full">
             <img className="iconImg" src={binImg1} alt="icon1" />
-            <span className="iconText">only accepts</span>
-
+            <span className="iconText" style={{ textAlign: 'center' }}>only accepts</span>
             <span className="iconTitle font-semibold gradient-text">
               recyclable waste
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg2} alt="icon2" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Gives consumer</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              rewards
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg3} alt="icon3" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Tracks</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              deposited waste
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg4} alt="icon4" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Automatically segregates</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              waste
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg5} alt="icon5" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Uses decentraized</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              blockchain
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg6} alt="icon6" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Monetises</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              data
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg7} alt="icon7" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Extracts</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              value data
             </span>
           </div>
           <div className="iconItem flex flex-col items-center w-full">
             <img className="iconImg" src={binImg8} alt="icon8" />
-            <span className="iconText">only accepts</span>
+            <span className="iconText" style={{ textAlign: 'center' }}>Embedded cellular</span>
             <span className="iconTitle font-semibold gradient-text">
-              recyclable waste
+              network
             </span>
           </div>
         </Slider>

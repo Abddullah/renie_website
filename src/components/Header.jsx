@@ -17,36 +17,36 @@ const Header = () => {
           </div>
           <div className="hidden cmd:flex md:justify-center gap-2 lg:gap-3 cmxl:gap-4 cxl:gap-5 space-x-4">
             <Link
-              to="/reniebin"
+              to="/products/renie-bins"
               className="text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl text-[#000000] whitespace-pre "
             >
               Renie Bin
             </Link>
 
             <Link
-              to="/reniehub"
+              to="/products/renie-hub"
               className="text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl text-[#000000] whitespace-pre "
             >
               Renie Hub
             </Link>
-            <a
-              href="renieapp"
+            <Link
+              to="/products/renie-app"
               className="text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl text-[#000000] whitespace-pre "
             >
               Renie App
-            </a>
-            <a
-              href="renieads"
+            </Link>
+            <Link
+              to="/services/ads"
               className="text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl text-[#000000] whitespace-pre "
             >
               Ads that matter
-            </a>
-            <a
-              href="reniemedia"
+            </Link>
+            {/* <Link
+              to="/news"
               className="text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl text-[#000000] whitespace-pre "
             >
               Media Hub
-            </a>
+            </Link> */}
           </div>
           <div className="hidden cmd:block">
             {/* <button className=" headerButton text-white text-[13px] lg:text-[15px] cmxl:text-[18px] cxl:text-xl whitespace-pre ">
@@ -89,43 +89,40 @@ const Header = () => {
       {isOpen && (
         <div className="cmd:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="reniebin"
+            <Link
+              to="/products/renie-bins"
               className="block text-black px-3 py-2  text-base font-normal"
             >
               Renie Bin
-            </a>
-            <a
-              href="
-              reniehub
+            </Link>
+            <Link
+              to="/products/renie-hub
 "
               className="block text-black px-3 py-2  text-base font-normal"
             >
               Renie Hub
-            </a>
-            <a
-              href=" 
-              renieapp
+            </Link>
+            <Link
+              to="/products/renie-app
              "
               className="block text-black px-3 py-2  text-base font-normal"
             >
               Renie App
-            </a>
-            <a
-              href="
-              renieads
+            </Link>
+
+            <Link
+              to="/services/ads
               "
               className="block text-black px-3 py-2  text-base font-normal"
             >
               Ads that matter
-            </a>
-            <a
-              href="
-              reniemedia"
+            </Link>
+            {/* <Link
+              to="/news"
               className="block text-black px-3 py-2  text-base font-normal"
             >
               Media Hub
-            </a>
+            </Link> */}
             <Connect />
           </div>
         </div>

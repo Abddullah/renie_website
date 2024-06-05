@@ -16,11 +16,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reniebin" element={<Reniebin />} />
-          <Route path="/reniehub" element={<RenieHub />} />
-          <Route path="/renieapp" element={<RenieApp />} />
-          <Route path="/renieads" element={<RenieAds />} />
-          <Route path="/reniemedia" element={<MediaHubMain />} />
+          <Route path="/products/renie-bins" element={<Reniebin />} />
+          <Route path="/products/renie-hub" element={<RenieHub />} />
+          <Route path="/products/renie-app" element={<RenieApp />} />
+          <Route path="/services/ads" element={<RenieAds />} />
+          <Route path="/news" element={<MediaHubMain />} />
         </Routes>
         <Footer />
       </Router>

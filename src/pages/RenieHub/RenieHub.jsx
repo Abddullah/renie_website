@@ -8,8 +8,9 @@ import { useEffect } from "react";
 
 const RenieHub = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+    document.title = "Renie Hub";
+  }, []);
   return (
     <div className="overflow-hidden">
       <HeroHub />

@@ -37,10 +37,10 @@ function Hub({ top, title, subTitle, desc }) {
             {desc}
           </p>
         </div>
-        <Link to="/reniehub">
-          <span className="reniebigImgText font-semibold text-center md:text-left">
+        <Link to="/products/renie-hub">
+          <p className="reniebigImgText font-semibold text-center md:text-left">
             Learn more {">"}{" "}
-          </span>
+          </p>
         </Link>
         {/* <div className='arrowSection relative w-full flex mx-10  hidden md:flex px-10 '>
           <img className='arrowImg absolute top-6' src={Arrow} alt='' />

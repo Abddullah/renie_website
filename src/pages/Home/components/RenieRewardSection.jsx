@@ -26,10 +26,10 @@ function RenieRewardSection() {
           </p>
         </div>
 
-        <Link to="/reniebin">
-          <span className="reniebigImgText font-semibold text-center md:text-left">
+        <Link to="/products/renie-bins">
+          <p className="reniebigImgText font-semibold text-center md:text-left">
             Learn more {">"}{" "}
-          </span>
+          </p>
         </Link>
       </div>
     </div>

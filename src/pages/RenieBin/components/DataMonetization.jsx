@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DataMonetization = () => {
   return (
     <div className="data-monetization-main h-[583px] flex justify-center items-center">
@@ -15,9 +17,11 @@ const DataMonetization = () => {
             integration turns your everyday waste disposal into a data-driven
             income.
           </p>
-          <span className=" font-semibold leading-[15px] text-[#E31662] text-[15px] block cmd:inline text-center">
-            Learn more &gt;
-          </span>
+          <Link to="/products/renie-app">
+            <span className=" font-semibold leading-[15px] text-[#E31662] text-[15px] block cmd:inline text-center">
+              Learn more &gt;
+            </span>
+          </Link>
         </div>
       </div>
     </div>

@@ -16,8 +16,9 @@ import Video from "../../components/Video";
 
 const RenieAds = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+    document.title = "Ads That Matter";
+  }, []);
   return (
     <div className="overflow-hidden">
       <HeroAds1 />

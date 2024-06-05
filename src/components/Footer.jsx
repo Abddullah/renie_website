@@ -31,11 +31,41 @@ function Footer() {
         >
           <p className="socialTitle gradient-text">Follow our socials!</p>
           <div className="socialIcons w-full flex justify-between items-center">
-            <img src={instagramIcon} alt="" className="iconItem" />
-            <img src={twiterIcon} alt="" className="iconItem" />
-            <img src={youtubeIcon} alt="" className="iconItem" />
-            <img src={tiktokIcon} alt="" className="iconItem" />
-            <img src={linkedinIcon} alt="" className="iconItem" />
+            <Link
+              to="https://www.instagram.com/wearerenie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagramIcon} alt="Instagram" className="iconItem" />
+            </Link>
+            <Link
+              to="http://twitter.com/yourtwitterhandle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={twiterIcon} alt="Twitter" className="iconItem" />
+            </Link>
+            <Link
+              to="http://youtube.com/@wearerenie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={youtubeIcon} alt="YouTube" className="iconItem" />
+            </Link>
+            <Link
+              to="https://www.tiktok.com/@wearerenie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={tiktokIcon} alt="TikTok" className="iconItem" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/renietech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinIcon} alt="LinkedIn" className="iconItem" />
+            </Link>
           </div>
           <div className="flex justify-between w-full px-2">
             <Link className="footerLink text-black" to="">

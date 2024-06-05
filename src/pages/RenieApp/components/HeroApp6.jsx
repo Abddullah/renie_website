@@ -26,7 +26,7 @@ const HeroApp6 = () => {
             app user.
           </span>{" "}
           <br />
-          <Link to="/renieads">
+          <Link to="/services/ads">
             <button className="heroButton my-4 ">Learn more</button>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import impact from "../../../assets/images/impact.webp";
+import Connect from "../../../components/Connect";
 
 const HeroApp5 = () => {
   return (
@@ -25,9 +26,9 @@ const HeroApp5 = () => {
               individual users.
             </p>
 
-            <button className="heroButton text-[#fff] mx-auto">
-              Take me to the Renie App
-            </button>
+            <div className=" mx-auto">
+              <Connect text="Take me to the Renie App" />
+            </div>
           </div>
         </div>
       </div>
